@@ -7,7 +7,17 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging><!--聚合项目  -->
 	
-<!--jar版本号管理-->
+
+
+
+	<modules><!-- mvn install 按顺序执行 -->
+		<module>mavenModel</module>
+		<module>mavenDao</module>
+		<module>mavenServiece</module>
+		<module>mavenManger</module>
+	</modules>
+	
+	<!--jar版本号管理-->
 	<properties>
 		<junit-version>4.10</junit-version>
 	</properties>
@@ -19,12 +29,4 @@
 			<version>${junit-version}</version>
 		</dependency>
 	</dependencies>
-
-
-	<modules><!-- mvn install 按顺序执行 -->
-		<module>mavenModel</module>
-		<module>mavenDao</module>
-		<module>mavenServiece</module>
-		<module>mavenManger</module>
-	</modules>
 </project>
